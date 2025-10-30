@@ -1,5 +1,4 @@
-// Minimal JSONPath subset parser: identifiers, [index], ['quoted keys'], optional $.
-// Not supported: wildcards, recursive descent, filters, slices.
+
 
 const isIdentStart = (ch) => /[A-Za-z_$]/.test(ch);
 const isIdentPart = (ch) => /[A-Za-z0-9_$]/.test(ch);
@@ -79,3 +78,4 @@ export function parseJsonPath(path) {
 
   return { tokens, error: '' };
 }
+
