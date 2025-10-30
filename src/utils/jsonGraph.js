@@ -1,4 +1,4 @@
-// Build a React Flow graph from JSON and compute a tidy tree layout.
+
 
 const isObject = (v) => v !== null && typeof v === 'object' && !Array.isArray(v);
 const isArray = Array.isArray;
@@ -129,3 +129,4 @@ export function buildFlowFromJson(json) {
   layoutTree(root);
   return flattenToFlow(root);
 }
+
